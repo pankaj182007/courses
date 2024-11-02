@@ -1,0 +1,9 @@
+docker ps //shows all conatainers that are running on system
+
+dacker ps -a // show all containers
+
+docker images  //show all images
+
+docker build -f <Dockerfile name> -t <image name> . // to build image in dockers
+
+ docker run -it --name <container name> -p3006:3006 <image name>  //-p is port on that app is going to run 

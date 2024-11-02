@@ -1,0 +1,11 @@
+FROM node:alpine
+
+WORKDIR /courses
+
+COPY ./package.json /courses
+
+RUN npm install --force
+
+COPY . /courses
+
+CMD [ "npm","start" ]
